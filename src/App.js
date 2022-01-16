@@ -17,9 +17,9 @@ function App() {
       <Header />
       <Routes history={history}>
         <Route exact path="/" element={<Home />} />
-        <Route path="/#/AboutUs" element={<AboutUs />} />
-        <Route path="/#/AboutUs#aboutpage" element={<AboutUs />} />
-        <Route path="/#/product/:id" element={<Contact />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/AboutUs#aboutpage" element={<AboutUs />} />
+        <Route path="/product/:id" element={<Contact />} />
       </Routes>
       
       </Router>
