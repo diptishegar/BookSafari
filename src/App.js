@@ -15,7 +15,7 @@ function App() {
       <div className="pl-3">
       <Router>
       <Header />
-      <Routes history={history}>
+      <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/AboutUs#aboutpage" element={<AboutUs />} />
