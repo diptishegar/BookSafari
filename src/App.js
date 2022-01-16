@@ -4,8 +4,7 @@ import Footer from "./Components/Footer";
 import { 
   BrowserRouter as Router,
   Routes,
-  Route, 
-  Link } from "react-router-dom";
+  Route } from "react-router-dom";
   import Home from "./Views/Home";
   import AboutUs from "./Views/AboutUs";
 import Contact from "./Views/Contact";
