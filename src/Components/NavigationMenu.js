@@ -15,12 +15,12 @@ function NavigationMenu(props) {
                   </Link>
                 </li>
                 <li>
-                  <HashLink onClick={props.closeMenu} smooth to="/AboutUs" className="font-mono pl-5 text-xl text-purple-900 py-5 rounded border-b border-purple-200 block">
+                  <HashLink onClick={props.closeMenu} smooth to="/#/AboutUs" className="font-mono pl-5 text-xl text-purple-900 py-5 rounded border-b border-purple-200 block">
                   About
                   </HashLink>
                 </li>
                <li>
-                 <Link onClick={props.closeMenu} to="/Contact" className="font-mono text-xl pl-5 text-purple-900 py-5 rounded border-b border-purple-200 block">
+                 <Link onClick={props.closeMenu} to="/#/Contact" className="font-mono text-xl pl-5 text-purple-900 py-5 rounded border-b border-purple-200 block">
                  Contact
                  </Link>
                  
