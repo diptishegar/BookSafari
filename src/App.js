@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="relative pb-10 min-h-screen">
       <div className="pl-3">
+<BrowserRouter>
       <Router>
       <Header />
       <Routes history={history}>
@@ -23,6 +24,7 @@ function App() {
       </Routes>
       
       </Router>
+</BrowserRouter>
     </div>
     <Footer />
     </div>
