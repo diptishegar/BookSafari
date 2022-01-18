@@ -8,7 +8,7 @@ import {
   import Home from "./Views/Home";
   import AboutUs from "./Views/AboutUs";
 import Contact from "./Views/Contact";
-import browserHistory from 'history/createBrowserHistory';
+import { browserHistory } from 'history/createBrowserHistory';
 
 function App() {
   return (
