@@ -8,7 +8,8 @@ import {
   import Home from "./Views/Home";
   import AboutUs from "./Views/AboutUs";
 import Contact from "./Views/Contact";
-import { browserHistory } from 'react-router'
+import browserHistory from "react-router/lib/browserHistory";
+
 
 function App() {
   return (
