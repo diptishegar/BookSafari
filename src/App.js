@@ -8,8 +8,7 @@ import {
   import Home from "./Views/Home";
   import AboutUs from "./Views/AboutUs";
 import Contact from "./Views/Contact";
-import browserHistory from "react-router/lib/browserHistory";
-
+import browserHistory from 'history/createBrowserHistory';
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route strict path="#AboutUs" element={<AboutUs />} />
+        <Route strict path="/AboutUs" element={<AboutUs />} />
         <Route path="/AboutUs#aboutpage" element={<AboutUs />} />
         <Route path="/product/:id" element={<Contact />} />
       </Routes>
