@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="relative pb-10 min-h-screen">
       <div className="pl-3">
-<BrowserRouter>
+<BrowserRouter history={history}>
       <Router>
       <Header />
-      <Routes history={history}>
+      <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="#/AboutUs" element={<AboutUs />} />
         <Route path="/AboutUs#aboutpage" element={<AboutUs />} />
