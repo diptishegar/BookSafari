@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { 
-  BrowserRouter as Router,
+ HashRouter,
   Routes,
   Route } from "react-router-dom";
   import Home from "./Views/Home";
@@ -13,18 +13,15 @@ function App() {
   return (
     <div className="relative pb-10 min-h-screen">
       <div className="pl-3">
-<BrowserRouter history={history}>
-      <Router>
+      <HashRouter history={hashHistory}>
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="#/AboutUs" element={<AboutUs />} />
+        <Route exact path="AboutUs" element={<AboutUs />} />
         <Route path="/AboutUs#aboutpage" element={<AboutUs />} />
         <Route path="/product/:id" element={<Contact />} />
       </Routes>
-      
-      </Router>
-</BrowserRouter>
+      </HashRouter>
     </div>
     <Footer />
     </div>
