@@ -8,13 +8,12 @@ import {
   import Home from "./Views/Home";
   import AboutUs from "./Views/AboutUs";
 import Contact from "./Views/Contact";
-import { browserHistory } from 'history/createBrowserHistory';
 
 function App() {
   return (
     <div className="relative pb-10 min-h-screen">
       <div className="pl-3">
-      <Router history={browserHistory}>
+      <Router>
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
