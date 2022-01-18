@@ -8,12 +8,13 @@ import {
   import Home from "./Views/Home";
   import AboutUs from "./Views/AboutUs";
 import Contact from "./Views/Contact";
+import { browserHistory } from 'react-router'
 
 function App() {
   return (
     <div className="relative pb-10 min-h-screen">
       <div className="pl-3">
-      <Router history={hashHistory}>
+      <Router history={browserHistory}>
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
