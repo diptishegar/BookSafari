@@ -2,8 +2,6 @@ import React from "react";
 import * as Icon from 'react-bootstrap-icons';
 
 function Footer(){
-  let content = null
-
     return(
         <footer className="bg-black text-center text-white text-xs p-3 absolute bottom-0 w-full">
          <h4 className="mb-3 font-mono text-2xl w-full rounded">Contact Us</h4>
