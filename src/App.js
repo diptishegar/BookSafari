@@ -20,10 +20,13 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/AboutUs#aboutpage" element={<AboutUs />} />
         <Route path="/product/:id" element={<Contact />} />
+        <Route path="/#FooterPagedown" element={<Footer />} />
       </Routes>
       </Router>
     </div>
+    <div id="FooterPagedown">
     <Footer />
+    </div>
     </div>
   );
 }

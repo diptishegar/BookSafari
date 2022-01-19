@@ -22,7 +22,7 @@ function Navigation() {
 
   return (
     <nav>
-      <span className="text-3xl font-medium border py-1 px-3 rounded border-purple-200">
+      <span className="text-3xl font-medium border py-1 px-3 rounded border-gray-900">
         <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />
       </span>
       {maskTransitions(
@@ -40,7 +40,7 @@ function Navigation() {
           item && (
             <animated.div
               style={styles}
-              className="fixed bg-gray-200 left-0 w-4/5 shadow h-full z-50 top-0 p-3"
+              className="fixed bg-white left-0 w-4/5 shadow h-full z-50 top-0 p-3"
             >
               <NavigationMenu closeMenu={() => setShowMenu(false)}/>
             </animated.div>
