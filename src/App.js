@@ -12,7 +12,7 @@ import Contact from "./Views/Contact";
 function App() {
   return (
     <div className="relative pb-10 min-h-screen">
-      <div className="pl-3">
+      <div className="pl-3 pb-40">
       <Router>
       <Header />
       <Routes>
@@ -25,7 +25,7 @@ function App() {
       </Router>
     </div>
     <div id="FooterPagedown">
-    <Footer />
+    <Footer className="mt-6" />
     </div>
     </div>
   );

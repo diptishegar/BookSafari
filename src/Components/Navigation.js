@@ -22,7 +22,7 @@ function Navigation() {
 
   return (
     <nav>
-      <span className="text-3xl font-medium border py-1 px-3 rounded border-gray-900">
+      <span className="text-3xl font-medium border py-1 px-3 rounded hover:border-gray-500 hover:shadow-inner hover:text-gray-700 shadow border-gray-900">
         <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />
       </span>
       {maskTransitions(
