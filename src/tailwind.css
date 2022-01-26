@@ -52222,3 +52222,51 @@ video {
     transition-duration: 1000ms;
   }
 }
+
+@media (min-width:320px) and (max-width:2000px) {
+  .fuckingcross {
+    margin-top: 2rem !important;
+    float: right !important;
+  }
+}
+
+@media (min-width:320px) and (max-width:400px) {
+  .fuckingcross {
+    
+    margin-right: 8% !important;
+  }
+}
+@media (min-width:400px) and (max-width:600px) {
+  .fuckingcross {
+    
+    margin-right: 10% !important;
+  }
+}
+@media (min-width:600px) and (max-width:800px) {
+  .fuckingcross {
+    
+    margin-right: 12% !important;
+  }
+}
+@media (min-width:800px) and (max-width:1200px) {
+  .fuckingcross {
+    
+    margin-right: 14% !important;
+  }
+}
+@media (min-width:1200px) and (max-width:1600px) {
+  .fuckingcross {
+   
+    margin-right: 16% !important;
+  }
+}
+@media (min-width:1600px) and (max-width:2000px) {
+  .fuckingcross {
+    
+    margin-right: 18% !important;
+  }
+}
+
+.bg-blur-backg {
+  backdrop-filter: blur(9px);
+}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import * as Icon from 'react-bootstrap-icons';
 import { useTransition, animated } from "react-spring";
 import NavigationMenu from "./NavigationMenu";
 
@@ -14,25 +13,26 @@ function Navigation() {
     delay: 200,
   });
   const menuTransitions = useTransition(showMenu, {
-    from: { opacity: 0, transform: "translateY(-100%)" },
-    enter: { opacity: 1, transform: "translateY(0%)" },
-    leave: { opacity: 0, transform: "translateY(100%)" },
+    from: { opacity: 0, transform: "translateX(-100%)" },
+    enter: { opacity: 1, transform: "translateX(0%)" },
+    leave: { opacity: 0, transform: "translateX(-100%)" },
     delay: 200,
   });
 
   return (
     <nav>
-      <span className="text-3xl font-medium border py-1 px-3 rounded hover:border-gray-500 hover:shadow-inner hover:text-gray-700 shadow border-gray-900">
-        <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />
+      <span className="text-3xl font-medium">
+        <Icon.List onClick={() => setShowMenu(true)}/>
       </span>
       {maskTransitions(
         (styles, item) =>
           item && (
             <animated.div
               style={styles}
-              className="fixed bg-black-t-50 left-0 w-full shadow h-full z-50 top-0"
-              onClick={() => setShowMenu(false)}
-            ></animated.div>
+              className="fixed bg-blur-backg z-50 left-0 w-full shadow h-full top-0"
+              >
+                <Icon.X onClick={() => setShowMenu(false)} className="strong text-black text-4xl font-bold fuckingcross"/>
+            </animated.div>
           )
       )}
       {menuTransitions(

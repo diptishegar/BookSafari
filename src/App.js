@@ -7,7 +7,6 @@ import {
   Route } from "react-router-dom";
   import Home from "./Views/Home";
   import AboutUs from "./Views/AboutUs";
-import Contact from "./Views/Contact";
 
 function App() {
   return (
@@ -18,8 +17,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/AboutUs#aboutpage" element={<AboutUs />} />
-        <Route path="/product/:id" element={<Contact />} />
         <Route path="/#FooterPagedown" element={<Footer />} />
       </Routes>
       </Router>

@@ -29,6 +29,8 @@ function Footer(){
               </span>
           </div>
           <br />
+          
+          <hr className="text-white text-transparent opacity-10"/>
           <span className="text-center font-sans text-white text-xs">&copy; Copyright 2022</span>
         </footer>
     )

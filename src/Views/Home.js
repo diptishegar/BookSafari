@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "../Components/Loader";
 import ProductCard from "../Components/ProductCard";
+import Search from "../Components/Search";
 
 function Home(){
 let content = null
@@ -59,6 +60,7 @@ if(product.loading){
     return(
 
         <div>
+        <Search />
         {content}
         </div>
     )
