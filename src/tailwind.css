@@ -52225,6 +52225,9 @@ video {
 
 @media (min-width:320px) and (max-width:2000px) {
   .fuckingcross {
+    background-color:silver;
+    border-radius: 50%;
+    padding: 0px;
     margin-top: 2rem !important;
     float: right !important;
   }
@@ -52233,37 +52236,37 @@ video {
 @media (min-width:320px) and (max-width:400px) {
   .fuckingcross {
     
-    margin-right: 8% !important;
+    margin-right: 7.5% !important;
   }
 }
 @media (min-width:400px) and (max-width:600px) {
   .fuckingcross {
     
-    margin-right: 10% !important;
+    margin-right: 9.5% !important;
   }
 }
 @media (min-width:600px) and (max-width:800px) {
   .fuckingcross {
     
-    margin-right: 12% !important;
+    margin-right: 11.5% !important;
   }
 }
 @media (min-width:800px) and (max-width:1200px) {
   .fuckingcross {
     
-    margin-right: 14% !important;
+    margin-right: 13.5% !important;
   }
 }
 @media (min-width:1200px) and (max-width:1600px) {
   .fuckingcross {
    
-    margin-right: 16% !important;
+    margin-right: 15.5% !important;
   }
 }
 @media (min-width:1600px) and (max-width:2000px) {
   .fuckingcross {
     
-    margin-right: 18% !important;
+    margin-right: 17.5% !important;
   }
 }
 

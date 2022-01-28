@@ -7,6 +7,7 @@ import {
   Route } from "react-router-dom";
   import Home from "./Views/Home";
   import AboutUs from "./Views/AboutUs";
+import BookMainPage from "./Components/BookMainPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/#FooterPagedown" element={<Footer />} />
+        <Route path="/Book/:id" element={<BookMainPage />} />
       </Routes>
       </Router>
     </div>
