@@ -21,7 +21,7 @@ function ProductCard({ Book }){
                    Price
                 {averageRating1}
                 </h4>
-                
+                <h5><a href={Book.volumeInfo.previewLink}>Visit</a></h5>
                 <Link to={`Book/${Book.id}`}>
                 <h5 className="font-mono p-1 mb-2 overflow-hidden truncate
                 ">
