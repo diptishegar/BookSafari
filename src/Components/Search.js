@@ -28,10 +28,6 @@ function Search(){
             setResult(data.data.items);
             console.log(data.data.items);
         })
-        .catch(err=>{
-            setResult([]);
-            setBook("");
-        })
 if(keyjust){
     setApiKey("jsjfdjsfijsdi8dfshdsfhhudshfuds");
 }
@@ -42,10 +38,6 @@ if(keyjust){
         .then(data=>{
             setResult(data.data.items);
             console.log(data.data.items);
-        })
-        .catch(err=>{
-            setResult([]);
-            setBook("");
         })
     }
 
@@ -78,7 +70,7 @@ if(keyjust){
     return( 
       <div>
          <form onSubmit={handleSubmit} class="flex items-center justify-center w-full mt-6">
-            <div class="flex border border-white rounded sm:w-3/4 md:w-2/4 py-0">
+            <div class="flex border border-white rounded sm:w-full md:w-2/4 py-0">
                 <input onChange={handleChange} type="text" class="px-4 sm:w-4/5 md:w-11/12 border border-white" placeholder="Search for Books/Author's name" />
                     <button type="submit" class="flex items-center justify-center px-4 py-2">
                         <svg class="w-6 h-6 text-white" fill="currentColor">
