@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { X } from "react-bootstrap-icons";
 import ProductCard from "./ProductCard";
 import BackImage from "../Images/BackgroundImageS.jpeg";
-let content = null;
+
 /* 
  axios.get(url)
         .then(data=>{
@@ -16,6 +16,7 @@ let content = null;
         })*/
 
 function Search() {
+  let content = null;
   let keyjust = 0;
   let content1 = null;
   const [book, setBook] = useState("");
@@ -34,8 +35,8 @@ function Search() {
   });
 
   var styleSearchBar = {
-    width: "100%",
-    height: "500px",
+    width: window.innerWidth,
+    height: window.innerHeight,
     backgroundImage: `url(${BackImage})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
