@@ -5,9 +5,10 @@ import { HashLink } from 'react-router-hash-link';
 
 
 function NavigationMenu(props) {
+  
   return (
-    <div className="mt-3 bg-transparent ml-2 rounded h-full">
-              <span className="pb-5 text-gray-800 pt-6 font-mono bg-white font-medium text-3xl sm:pl-0 md:px-3">BookSafari</span>
+    <div className="mt-3 z-50 bg-transparent ml-2 rounded h-full">
+              <span className="pb-5 shadow pt-6 text-gray-900 font-mono text-3xl sm:pl-0 md:px-3">BookSafari</span>
       
               <ul>
                 <li>

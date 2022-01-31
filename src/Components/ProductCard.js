@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+//grid sm:grid-cols-6 md:grid-cols-6 justify-items-center
+
 function ProductCard({ Book }){
    let averageRating1 =null
     if(Book.volumeInfo.averageRating)
@@ -10,8 +12,8 @@ function ProductCard({ Book }){
 
     try {
         return(
-            <div className="p-2 grid sm:grid-cols-6 md:grid-cols-6 justify-items-center gap-3">
-            <div style={{ margin:"0rem 0rem 0rem -.3rem" }} className="border shadow-2xl mb-2 p-3 rounded sm:col-start-2 sm:col-end-6 md:col-start-2 md:col-end-6 md:w-3/4 overflow-hidden bg-gray-100">
+            <div className="p-2 flex justify-center w-11/12 sm:w-11/12 md:w-11/12">
+            <div style={{ margin:"0rem 0rem 0rem -.3rem" }} className="border shadow-2xl mb-2 p-3 w-10/12 sm:w-2/4 rounded md:w-3/4 overflow-hidden bg-gray-100">
             
             <div className="p-3 text-xm">
                 <h3 className="font-mono text-2xl mb-3">

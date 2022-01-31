@@ -21,8 +21,8 @@ function Navigation() {
 
   return (
     <nav>
-      <span className="text-3xl font-medium">
-        <Icon.List onClick={() => setShowMenu(true)}/>
+      <span className="text-4xl font-medium font-extrabold">
+        <Icon.List className="font-extrabold w-12" onClick={() => setShowMenu(true)}/>
       </span>
       {maskTransitions(
         (styles, item) =>
@@ -32,7 +32,7 @@ function Navigation() {
               className="fixed bg-black-t-50 bg-blur-backg z-50 left-0 w-full shadow h-full top-0"
               onClick={() => setShowMenu(false)}
               >
-                <Icon.X onClick={() => setShowMenu(false)} className="strong text-white text-4xl xs:text-4xl md:text-5xl font-bold fuckingcross"/>
+              <Icon.X onClick={() => setShowMenu(false)} className="strong text-white text-4xl xs:text-4xl md:text-5xl font-bold fuckingcross"/>
             </animated.div>
           )
       )}

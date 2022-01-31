@@ -5321,7 +5321,7 @@ video {
 }
 
 .outline-none {
-  outline: 0;
+  outline: 0 !important;
 }
 
 .focus\:outline-none:focus {
@@ -8491,7 +8491,7 @@ video {
 }
 
 .w-10\/12 {
-  width: 83.333333%;
+  width: 83.333333% !important;
 }
 
 .w-11\/12 {
@@ -52231,6 +52231,12 @@ video {
     margin-top: 2rem !important;
     float: right !important;
   }
+  .divOfSearchBar{
+    margin-bottom: -1rem !important;
+  }
+  .duckingfooter {
+    z-index: -1 !important;
+  }
 }
 
 @media (min-width:320px) and (max-width:400px) {
@@ -52238,11 +52244,17 @@ video {
     
     margin-right: 7.5% !important;
   }
+  .fuckingsearchbar{
+    width: 80% !important;
+  }
 }
 @media (min-width:400px) and (max-width:600px) {
   .fuckingcross {
     
     margin-right: 9.5% !important;
+  }
+  .fuckingsearchbar{
+    width: 80% !important;
   }
 }
 @media (min-width:600px) and (max-width:800px) {
@@ -52250,11 +52262,17 @@ video {
     
     margin-right: 11.5% !important;
   }
+  .fuckingsearchbar{
+    width: 80% !important;
+  }
 }
 @media (min-width:800px) and (max-width:1200px) {
   .fuckingcross {
     
     margin-right: 13.5% !important;
+  }
+  .fuckingsearchbar{
+    width: 80% !important;
   }
 }
 @media (min-width:1200px) and (max-width:1600px) {

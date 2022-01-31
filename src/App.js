@@ -12,7 +12,7 @@ import BookMainPage from "./Components/BookMainPage";
 function App() {
   return (
     <div className="relative pb-10 min-h-screen">
-      <div className="pl-3 pb-40">
+      <div className="pb-40">
       <Router>
       <Header />
       <Routes>
