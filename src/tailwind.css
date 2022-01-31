@@ -598,11 +598,26 @@ video {
   .container {
     max-width: 1024px;
   }
+  .duckingfooter {
+    z-index: -1 !important;
+  }
+  .duckingsearchB{
+    margin-top: -15rem !important;
+  }
+  .duckingDivs {
+    margin-top: -30% !important;
+  }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+  .duckingfooter {
+    z-index: -1 !important;
+  }
+  .duckingsearchB{
+    margin-top: -15rem !important;
   }
   .duckingDivs {
     margin-top: -30% !important;
@@ -52241,7 +52256,7 @@ video {
     z-index: -1 !important;
   }
   .duckingsearchB{
-    margin-top: -15rem !important;
+    margin-top: -10rem !important;
   }
   .duckingDivs {
     margin-top: -30% !important;

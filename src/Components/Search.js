@@ -82,7 +82,7 @@ function Search() {
     ));
 
     return (
-      <div className="divOfSearchBar mb-6">
+      <div className="divOfSearchBar">
         <form
           style={styleSearchBar}
           onSubmit={handleSubmit}
