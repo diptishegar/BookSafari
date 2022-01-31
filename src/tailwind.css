@@ -52258,9 +52258,6 @@ video {
   .duckingsearchB{
     margin-top: -10rem !important;
   }
-  .duckingDivs {
-    margin-top: -30% !important;
-  }
 }
 
 @media (min-width:320px) and (max-width:400px) {
@@ -52270,6 +52267,9 @@ video {
   }
   .fuckingsearchbar{
     width: 80% !important;
+  }
+  .duckingDivs {
+    margin-top: -5rem !important;
   }
 }
 @media (min-width:400px) and (max-width:600px) {
