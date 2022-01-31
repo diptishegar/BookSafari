@@ -21,8 +21,8 @@ function Navigation() {
 
   return (
     <nav>
-      <span className="text-4xl font-medium font-extrabold">
-        <Icon.List className="font-extrabold w-12" onClick={() => setShowMenu(true)}/>
+      <span className="text-4xl font-medium font-font-extrabold">
+        <Icon.List className="font-extrabold w-12 mr-5" onClick={() => setShowMenu(true)}/>
       </span>
       {maskTransitions(
         (styles, item) =>

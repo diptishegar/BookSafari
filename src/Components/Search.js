@@ -82,7 +82,7 @@ function Search() {
     ));
 
     return (
-      <div className="divOfSearchBar">
+      <div className="divOfSearchBar mb-6">
         <form
           style={styleSearchBar}
           onSubmit={handleSubmit}
@@ -127,12 +127,14 @@ function Search() {
           </div>
         </form>
         {content1}
+        <div className="duckingDivs">
         {content}
+        </div>
       </div>
     );
   } catch (error) {
     content = (
-      <h2 className="text-white text-lg text-center mt-4 font-sans">
+      <h2 className="text-black text-lg text-center mt-4 font-sans">
         Match not found, try using different words!
       </h2>
     );
