@@ -23,7 +23,7 @@ function Header(){
 
     return(
 
-        <header className={navbar ? "bg-white fixed ml-0 shadow w-full px-3 flex justify-between items-center" : "bg-transparent text-white font-bold strong fixed shadow w-full px-3 flex justify-between items-center"}>
+        <header className={navbar ? "bg-white fixed ml-0 w-full px-3 flex justify-between items-center" : "bg-transparent text-white font-bold strong fixed shadow w-full px-3 flex justify-between items-center"}>
             <span className="pb-3 pt-3 font-mono font-medium text-3xl px-3">
             BookSafari
             </span>
