@@ -3,7 +3,7 @@ import * as Icon from 'react-bootstrap-icons';
 
 function Footer(){
     return(
-        <footer className="bg-black text-center text-white text-xs p-3 mt-4 absolute bottom-0 w-full duckingfooter">
+        <footer className="bg-black text-center text-white text-xs p-3 mt-4 absolute bottom-0 left-0 right-0 z-100 w-full duckingfooter">
          <h4 className="mb-3 mt-3 pt-5 font-mono text-2xl w-full rounded">Contact Us</h4>
         
          <div style={{ margin:"0rem 0rem 0rem 1rem" }} className="flex justify-start flex-col">

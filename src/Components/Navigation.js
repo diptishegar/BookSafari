@@ -29,7 +29,7 @@ function Navigation() {
           item && (
             <animated.div
               style={styles}
-              className="fixed bg-black-t-50 bg-blur-backg z-50 left-0 w-full shadow h-full top-0"
+              className="fixed bg-black-t-50 bg-blur-backg z-50 left-0 w-full bottom-0 h-full top-0"
               onClick={() => setShowMenu(false)}
               >
               <Icon.X onClick={() => setShowMenu(false)} className="strong text-white text-4xl xs:text-4xl md:text-5xl font-bold fuckingcross"/>
@@ -41,7 +41,7 @@ function Navigation() {
           item && (
             <animated.div
               style={styles}
-              className="fixed bg-white left-0 w-4/5 shadow h-full z-50 top-0 p-3"
+              className="fixed bg-white left-0 w-4/5 shadow h-full z-50 bottom-0 top-0 p-3"
             >
               <NavigationMenu closeMenu={() => setShowMenu(false)}/>
             </animated.div>

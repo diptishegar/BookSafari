@@ -40,7 +40,7 @@ function Search() {
     backgroundImage: `url(${BackImage})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+    backgroundRepeat: "no-repeat"
   };
 
   function handleChange(event) {
