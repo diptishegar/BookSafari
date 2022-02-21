@@ -62,6 +62,12 @@ function Search() {
       width: window.innerWidth,
       height: "auto"
     });
+    if(!cros){
+      setheightV({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    }
     if (event.target.value === "") {
       setCross(false);
       setResult([]);
