@@ -33,14 +33,17 @@ function Search() {
     leave: { opacity: 0 },
     delay: 200,
   });
-
+  var styleSearchOfDiv = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  };
   var styleSearchBar = {
     width: window.innerWidth,
     height: window.innerHeight,
     backgroundImage: `url(${BackImage})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundRepeat: "no-repeat"
+    backgroundRepeat: "no-repeat",
   };
 
   function handleChange(event) {
@@ -82,7 +85,7 @@ function Search() {
     ));
 
     return (
-      <div className="divOfSearchBar">
+      <div style={styleSearchOfDiv} className="divOfSearchBar">
         <form
           style={styleSearchBar}
           onSubmit={handleSubmit}
@@ -127,9 +130,7 @@ function Search() {
           </div>
         </form>
         {content1}
-        <div className="duckingDivs">
-        {content}
-        </div>
+        <div className="duckingDivs">{content}</div>
       </div>
     );
   } catch (error) {

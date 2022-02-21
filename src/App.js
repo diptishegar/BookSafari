@@ -21,10 +21,10 @@ function App() {
         <Route path="/#FooterPagedown" element={<Footer />} />
         <Route path="/Book/:id" element={<BookMainPage />} />
       </Routes>
-      </Router>
-    </div>
-    <div id="FooterPagedown">
+      <div id="FooterPagedown">
     <Footer className="mt-6" />
+    </div>
+      </Router>
     </div>
     </div>
   );
