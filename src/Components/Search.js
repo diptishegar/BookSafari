@@ -19,6 +19,10 @@ function Search() {
   let content = null;
   let keyjust = 0;
   let content1 = null;
+  const [heightV, setheightV] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  })
   const [book, setBook] = useState("");
   const [result, setResult] = useState([]);
   const [cros, setCross] = useState(false);
@@ -33,10 +37,7 @@ function Search() {
     leave: { opacity: 0 },
     delay: 200,
   });
-  var styleSearchOfDiv = {
-    width: window.innerWidth,
-    height: window.innerHeight,
-  };
+  var styleSearchOfDiv = heightV;
   var styleSearchBar = {
     width: window.innerWidth,
     height: window.innerHeight,
@@ -57,6 +58,10 @@ function Search() {
       setApiKey("jsjfdjsfijsdi8dfshdsfhhudshfuds");
     }
     setCross(true);
+    setheightV({
+      width: window.innerWidth,
+      height: "auto"
+    });
     if (event.target.value === "") {
       setCross(false);
       setResult([]);
