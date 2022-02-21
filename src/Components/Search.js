@@ -46,7 +46,6 @@ function Search() {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   };
-
   function handleChange(event) {
     const book = event.target.value;
     setBook(book);
@@ -62,12 +61,6 @@ function Search() {
       width: window.innerWidth,
       height: "auto"
     });
-    if(!cros){
-      setheightV({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
-    }
     if (event.target.value === "") {
       setCross(false);
       setResult([]);
@@ -75,6 +68,7 @@ function Search() {
       content1 = <h1 className="text-white text-2xl">Related to ur search</h1>;
     }
   }
+
   function handleSubmit(event) {
     event.preventDefault();
     axios
@@ -120,6 +114,10 @@ function Search() {
                       document.getElementById("inputBook").value = "";
                       setCross(false);
                       setResult([]);
+                      setheightV({
+                        width: window.innerWidth,
+                        height: window.innerHeight
+                      });
                       setBook("");
                     }}
                   >
@@ -151,8 +149,9 @@ function Search() {
       </h2>
     );
     return (
-      <div>
+      <div style={styleSearchOfDiv} className="divOfSearchBar">
         <form
+          style={styleSearchBar}
           onSubmit={handleSubmit}
           class="flex items-center justify-center w-full mt-6"
         >

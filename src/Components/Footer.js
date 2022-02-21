@@ -3,7 +3,8 @@ import * as Icon from 'react-bootstrap-icons';
 
 function Footer(){
   var styleSearchOfDiv = {
-    width: window.innerWidth
+    width: window.innerWidth,
+    zIndex: "-1"
   };
     return(
         <footer style={styleSearchOfDiv} className="bg-black text-center text-white text-xs p-3 mt-4 absolute bottom-0 left-0 right-0 z-100 w-full duckingfooter">
